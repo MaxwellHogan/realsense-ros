@@ -242,7 +242,7 @@ void BaseRealSenseNode::clip_depth(rs2::depth_frame depth_frame, float clipping_
             // Check if the depth value is greater than the threashold
             if (p_depth_frame[depth_pixel_index] > clipping_value)
             {
-                p_depth_frame[depth_pixel_index] = 0; //Set to invalid (<=0) value.
+                p_depth_frame[depth_pixel_index] = clipping_value; //MOD: Set to max range.
             }
         }
     }

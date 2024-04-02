@@ -20,6 +20,8 @@ NamedFilter::NamedFilter(std::shared_ptr<rs2::filter> filter, std::shared_ptr<Pa
 void NamedFilter::setOptions(){
     _filter->set_option(RS2_OPTION_VISUAL_PRESET, 1);
     _filter->set_option(RS2_OPTION_COLOR_SCHEME, 3);
+    _filter->set_option(RS2_OPTION_MAX_DISTANCE, 3.0);
+
 }
 
 void NamedFilter::setParameters(std::function<void(const rclcpp::Parameter&)> enable_param_func)
