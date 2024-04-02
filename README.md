@@ -1,3 +1,8 @@
+***Forked from:*** https://github.com/IntelRealSense/realsense-ros
+
+***This code is form my own personal use, I did not create it, run the project or in any way assiciated with it's development. Go to the above link for the official repo.*** 
+
+
 # ROS2 Wrapper for Intel&reg; RealSense&trade; Devices
 These are packages for using Intel RealSense cameras (D400 and L500 series, SR300 camera and T265 Tracking Module) with ROS2.
 
